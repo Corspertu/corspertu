@@ -39,6 +39,12 @@ const router = new VueRouter({
       component: Whoami // show this component when the route is checked
     },
 
+    {
+      name: 'page404', // name of the route
+      path: '/page404', // matching url
+      component: Page404 // show this component when the route is checked
+    },
+
     
   ]
 
@@ -50,6 +56,7 @@ import Home from './views/Home.vue';
 import Services from './views/Services.vue';
 import Skills from './views/Skills.vue';
 import Whoami from './views/Whoami.vue';
+import Page404 from './views/Page404.vue';
 
 Vue.config.productionTip = false
 
