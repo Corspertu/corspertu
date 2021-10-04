@@ -2,7 +2,7 @@
    <div class="bgc">
  
 
-<h1>Qui Ssuis-je?</h1>
+<h1>Qui Suis-je?</h1>
 
  <v-app id="inspire">
     <v-timeline>

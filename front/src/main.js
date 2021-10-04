@@ -22,9 +22,21 @@ const router = new VueRouter({
       component: Home // show this component when the route is checked
     },
     {
-      name: 'team', // name of the route
-      path: '/team', // matching url
-      component: Team // show this component when the route is checked
+      name: 'services', // name of the route
+      path: '/services', // matching url
+      component: Services // show this component when the route is checked
+    },
+
+    {
+      name: 'skills', // name of the route
+      path: '/skills', // matching url
+      component: Skills // show this component when the route is checked
+    },
+
+    {
+      name: 'whoami', // name of the route
+      path: '/whoami', // matching url
+      component: Whoami // show this component when the route is checked
     },
 
     
@@ -35,7 +47,9 @@ const router = new VueRouter({
 // components used by the router
 // NOT FORGET to import views's components, if not show
 import Home from './views/Home.vue';
-import Team from './views/Team.vue';
+import Services from './views/Services.vue';
+import Skills from './views/Skills.vue';
+import Whoami from './views/Whoami.vue';
 
 Vue.config.productionTip = false
 
