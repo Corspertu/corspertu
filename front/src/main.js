@@ -45,6 +45,18 @@ const router = new VueRouter({
       component: Page404 // show this component when the route is checked
     },
 
+    {
+      name: 'contact', // name of the route
+      path: '/contact', // matching url
+      component: Contact // show this component when the route is checked
+    },
+
+    {
+      name: 'legal', // name of the route
+      path: '/legal', // matching url
+      component: Legal // show this component when the route is checked
+    },
+
     
   ]
 
@@ -57,6 +69,8 @@ import Services from './views/Services.vue';
 import Skills from './views/Skills.vue';
 import Whoami from './views/Whoami.vue';
 import Page404 from './views/Page404.vue';
+import Contact from './views/Contact.vue';
+import Legal from './views/Legal.vue';
 
 Vue.config.productionTip = false
 
