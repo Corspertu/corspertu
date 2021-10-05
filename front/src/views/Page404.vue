@@ -1,5 +1,5 @@
 <template>
-   <div class="bgc">
+   <div class="pageLost">
  
 
 <h1>Page 404</h1>
@@ -26,12 +26,13 @@ export default {
 </script>
 
 <style>
-.bgc {
+.pageLost {
     background-image: url("../assets/logo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
-    height: 100%;
+    min-height: 800px;
+    padding-top: 4em;
 }
 
 h1,h2{
@@ -40,7 +41,6 @@ h1,h2{
 }
 
 h1{
-  margin-top: 1em;
   font-weight: bolder;
   color: #3c4b65;
 }

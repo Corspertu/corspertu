@@ -3,21 +3,8 @@
  
 
 <h1>Mentions légales</h1>
-<h2>La page que vous cherchez n'existe pas ou n'a pas encore été créée</h2>
-<h2><router-link
-                  style="text-decoration: none; color: dark"
-                  :to="{ name: '/' }"
-                >
-                  Retour ver l'accueil
-                </router-link></h2>
-<div class="img">
-  <v-img src="../assets/logo.png">
-  
-</v-img>
-  </div>
-   
- </div>
-    
+
+    </div>
 </template>
 
 <script>
