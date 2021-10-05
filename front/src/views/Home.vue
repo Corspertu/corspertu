@@ -4,8 +4,8 @@
 
         <div class="content">
           <h1>
-            Votre expertise pilotage budgétaire / organisation / web pour tous
-            les acteurs de l'économie sociale et solidaire
+            Votre expertise Pilotage Budgétaire / Organisation / Web pour tous
+            les acteurs de l'économie sociale et solidaire en Corse et PACA
           </h1>
           <div class="text">
             L'économie sociale et solidaire est un secteur en perpétuel

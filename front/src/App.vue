@@ -76,6 +76,16 @@
                     >Qui suis-je
                   </router-link>
                 </v-tab>
+                <v-tab>
+                  <router-link
+                    style="
+                      text-decoration: none;
+                      color: white;
+                    "
+                    :to="{ name: 'projects' }"
+                    >Projets
+                  </router-link>
+                </v-tab>
               </v-tabs>
             </template>
           </v-app-bar>
@@ -145,6 +155,19 @@
                     :to="{ name: 'whoami' }"
                   >
                     Qui suis-je?
+                  </router-link>
+                </v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <router-link
+                    style="
+                      text-decoration: none;
+                      color: white;
+                    "
+                    :to="{ name: 'projects' }"
+                  >
+                    Projets
                   </router-link>
                 </v-list-item-title>
               </v-list-item>

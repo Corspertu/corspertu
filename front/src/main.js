@@ -56,7 +56,11 @@ const router = new VueRouter({
       path: '/legal', // matching url
       component: Legal // show this component when the route is checked
     },
-
+    {
+      name: 'projects', // name of the route
+      path: '/projects', // matching url
+      component: Projects // show this component when the route is checked
+    },
     
   ]
 
@@ -71,6 +75,7 @@ import Whoami from './views/Whoami.vue';
 import Page404 from './views/Page404.vue';
 import Contact from './views/Contact.vue';
 import Legal from './views/Legal.vue';
+import Projects from './views/Projects.vue';
 
 Vue.config.productionTip = false
 
