@@ -44,13 +44,17 @@ export default {
     return {
       items: [
         {
-        src: '../assets/placebusiness.jpg',
-        title: 'titre 1',
-        text: 'texte1'
+        src: require('../assets/budgetFinance.jpg'),
+        title: 'Budget Finance',
+        text: 'Expertise dans le pilotage budgétaire, comptabilité analytique, comptabilité d\'engagement. Je peux construire la solution adapté à vos besoins et à ceux de vos financeurs.'
         },
-        {src: '../assets/feu.jpg',
-        title: 'titre 2',
-        text:'texte 2'
+        {src: require('../assets/devWeb.jpg'),
+        title: 'Développement Web',
+        text:'Création de sites Web: sites vitrines, blog, fils d\'actualité, intranet pour vos membres, stratégie web.'
+        },
+        {src: require('../assets/orgaControle.jpg'),
+        title: 'Organisation Qualité Contrôle',
+        text:'Création de procédures, contrôle de processus, optimisation des organisations.'
         },
       ],
       
@@ -62,6 +66,7 @@ export default {
 
 <style>
 .servicesPage {
-    padding-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 </style>

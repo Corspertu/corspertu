@@ -39,7 +39,7 @@
               fill-dot
               large
             >
-              <v-card :color="item.color" dark>
+              <v-card  :color="item.color" dark>
                 <v-img height="75px" :src="item.picture">
                   <v-card-title class="text-h5">
                     {{ item.title }}
@@ -96,8 +96,8 @@ export default {
       {
         color: "brown lighten-1",
         icon: "mdi-key-variant",
-        title: "Des services ouverts à tous",
-        text: "Mes services sont destinés en priorité à l'économie sociale et solidaire. Mais je peux également apporter mon expertise aux sociétés commerciales et administrations. Ces prestations peuvent passer vie la SASU W.O.C. (en cours d'immatriculation) ",
+        title: "Des services ouverts à tous tant en Corse que en PACA",
+        text: "Mon expertise s'applique parfaitement aux sociétés commerciales et aux administrations. Ces prestations peuvent passer via la SASU W.O.C. (en cours d'immatriculation) ",
         link: "page404",
       },
     ],
@@ -113,9 +113,7 @@ export default {
   margin-right: 10%;
 }
 
-h1 {
-  margin-bottom: 2em;
-}
+
 
 .logo{
   margin-left: auto;
