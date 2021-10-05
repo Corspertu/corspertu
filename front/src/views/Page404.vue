@@ -10,13 +10,10 @@
                 >
                   Retour ver l'accueil
                 </router-link></h2>
-<div class="img">
-  <v-img src="../assets/logo.png">
-  
-</v-img>
+
   </div>
    
- </div>
+
     
 </template>
 
@@ -30,10 +27,14 @@ export default {
 
 <style>
 .bgc {
-    background-color: #9b9aa3;
+    background-image: url("../assets/logo.png");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100%;
 }
 
-h1,h2,.img {
+h1,h2{
   text-align: center;
   padding: 5px;
 }

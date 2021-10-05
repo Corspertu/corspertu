@@ -1,5 +1,5 @@
 <template>
-  <div class="bgc">
+  <div class="page">
     <h1>Contact</h1>
     <v-card class="mx-auto" max-width="800">
       <v-img
@@ -10,7 +10,7 @@
         <v-card-title>Cors'pertu Arnaud Bascou</v-card-title>
       </v-img>
 
-      <v-card-text class="text--primary" style="font-size: 1.2em; margin-top: 1em">
+      <v-card-text class="text--primary" style="font-size: 1em; margin-top: 1em">
         <div><v-icon> mdi-phone</v-icon> Téléphone: 06.20.59.02.94</div>
         <div><v-icon> mdi-email</v-icon> contact@corspertu.corsica</div>
         <div>
@@ -44,20 +44,20 @@ export default {
 </script>
 
 <style>
-.bgc {
-  background-color: #9b9aa3;
-  min-height: 1000px;
+.page {
+ padding-top: 4em; 
 }
 
 h1,
 h2,
 .img {
+ 
   text-align: center;
   padding: 5px;
 }
 
 h1 {
-  margin-top: 1em;
+
   font-weight: bolder;
   color: #3c4b65;
 }
