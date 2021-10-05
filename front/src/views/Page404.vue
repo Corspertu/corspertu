@@ -8,7 +8,7 @@
                   style="text-decoration: none; color: dark"
                   :to="{ name: '/' }"
                 >
-                  Retour ver l'accueil
+                  Retour vers l'accueil
                 </router-link></h2>
 
   </div>

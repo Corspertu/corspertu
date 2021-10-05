@@ -17,7 +17,7 @@
         color= #657EAB
       >
   
-        <v-toolbar-title>Budget Finance</v-toolbar-title>
+        <v-toolbar-title>Budget Finance Organisation</v-toolbar-title>
 
       </v-app-bar>
   
@@ -171,7 +171,7 @@ export default {
         color: '#0ABDA2',
         src: require('../assets/oclock.png'),
         title: 'Ecole du Web O\'Clock',
-        text: 'Titre professionnel de développeur web et web mobile. Langages maitrisés: HTML, PHP, JS, SQL.',
+        text: 'Titre professionnel de développeur web et web mobile. Langages maitrisés: HTML, PHP, JS, SQL. Fonctionnalités: POO, Laravel, Parcel, Bootstrap, Composer, API.',
       },
        {
         color: '#207196',
@@ -188,7 +188,7 @@ export default {
       {
         color: '#264152',
         src: require('../assets/opquast.jpg'),
-        title: 'Licence Qualité Web Opquast',
+        title: 'Certificat Qualité Web Opquast',
         text: 'Maitrise de la qualité Web. Score 865/1000',
       },
       {
@@ -203,6 +203,12 @@ export default {
         title: 'Certificats Openclassroom',
         text: 'HTML5 et CSS3, Wordpress, charte graphique, community management',
       },
+      {
+        color: '#4285F4',
+        src: require('../assets/google.png'),
+        title: 'Google Licence marketing numérique',
+        text: '',
+      },
     ]
   }),
 }
@@ -210,10 +216,12 @@ export default {
 
 <style>
 .flexbox{
+  
   display: flex;
 }
 
 .skills{
+ height: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
 }

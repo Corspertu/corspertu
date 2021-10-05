@@ -1,37 +1,68 @@
 <template>
-   <div class="bgc">
- 
-
+   
+<div class="whoami">
 <h1>Qui Suis-je?</h1>
+<div class="text">
+Je me présente, Arnaud Bascou, 37 ans. Après une reconvertion professionnelle, j'ai monté ce projet de consultant web/organisation
+à destination de l'économie sociale et solidaire. Après 13 ans de vie professionnelle j'étais fier d'avoir acquis une grande expertise 
+dans différents domaines. Cependant, il me manquait des choses importantes: les valeurs, le plaisir du travail accompli, 
+le fait que mon travail fasse bouger les choses. 
+<br><br>
+Au-delà de l'expérience, ce qui garantit le bon déroulement d'un projet, ce sont les valeurs portées par celui qui l'entreprend. 
+Durant mes expériences professionnelles j'ai pu le constater à de multiples reprises. Face à chaque projet je me présente avec
+les leçons apprises de tous les précédents. Je m'enrichis et ce faisant, j'enrichis mon travail. <br>
+Je vis avec passion et je mets toute ma passion dans mes projets, qu'ils soient personnels ou professionnels. Cette passion
+permet de se plonger intégralement dans des sujets nouveaux, d'en acquérir l'expertise et d'en ressortir avec les solutions
+attendues.
 
- <v-app id="inspire">
-    <v-timeline>
-      <v-timeline-item
-        v-for="n in 4"
-        :key="n"
-        large
-      >
-        <template v-slot:icon>
-          <v-avatar>
-            <img src="https://i.pravatar.cc/64">
-          </v-avatar>
-        </template>
-        <template v-slot:opposite>
-          <span>Tus eu perfecto</span>
-        </template>
-        <v-card class="elevation-2">
-          <v-card-title class="headline">
-            Lorem ipsum
-          </v-card-title>
-          <v-card-text>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
-  </v-app>
+</div>
 
-   </div>
+
+<div class="containerWho">
+  <div class="card">
+    <h3 class="title">Expérimenté</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      Des expériences variées et enrichissantes.
+    </div>
+  </div>
+  <div class="card">
+    <h3 class="title">Investi</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      Je prends à coeur mes missions et ne laisse pas de problémes sans solutions.
+    </div>
+  </div>
+  <div class="card">
+    <h3 class="title">Passionné</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      Celui qui travaille avec passion ne travaillera plus un seul jour de sa vie.
+    </div>
+  </div>
+  <div class="card">
+    <h3 class="title">Endurant</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      Quelle que soit leurs tailles ou leurs durées, je finis mes projets et j'atteins mes objectifs.
+    </div>
+  </div>
+</div>
+  
    
-   
+</div>   
     
 </template>
 
@@ -43,8 +74,118 @@ export default {
 }
 </script>
 
-<style>
-.bgc {
-    background-color: #9b9aa3;
+<style lang="scss">
+.whoami{
+  height: 1000px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
+
+.text {
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.containerWho {
+  padding-top: 2em;
+  margin: 0 auto;
+  position: static;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #3C4B65;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #3C4B65;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 150px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #3C4B65;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
 </style>

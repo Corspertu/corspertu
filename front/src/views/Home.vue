@@ -83,7 +83,7 @@ export default {
         color: "deep-purple lighten-1",
         icon: "mdi-folder-multiple-plus",
         title: "Des compétences variées et riches à votre service",
-        text: "Après 10 ans de contrôle et d'organisation au sein de banques d'affaires j'ai approfondi mes connaissances dans le budget au sein d'administrations. Je suis également titulaire d'un diplôme de développeur web et de gestionnaire paye en plus de celui de l'école de commerce de Toulouse. Engagé dans le monde sportif associatif je connais bien les défis actuels des associations.",
+        text: "Après 10 ans de contrôle et d'organisation au sein de banques d'affaires j'ai approfondi mes connaissances dans le budget au sein d'administrations. Je suis également titulaire d'un diplôme de développeur web et de gestionnaire paie en plus de celui de l'école de commerce de Toulouse. Engagé dans le monde sportif associatif je connais bien les défis actuels des associations.",
         link: "skills",
       },
       {
@@ -96,7 +96,7 @@ export default {
       {
         color: "brown lighten-1",
         icon: "mdi-key-variant",
-        title: "Des services ouverts à tous tant en Corse que en PACA",
+        title: "Des services ouverts à tous tant en Corse qu'en PACA",
         text: "Mon expertise s'applique parfaitement aux sociétés commerciales et aux administrations. Ces prestations peuvent passer via la SASU W.O.C. (en cours d'immatriculation) ",
         link: "page404",
       },

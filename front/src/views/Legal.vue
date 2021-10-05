@@ -4,6 +4,7 @@
 
 <h1>Mentions légales</h1>
 
+L'association Cors'pertu est enregistrée 
     </div>
 </template>
 
