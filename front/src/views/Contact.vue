@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1>Contact</h1>
+    <div class="banner"><h1>Contact</h1></div>
     <v-card id="contactCard" class="mx-auto" max-width="800">
       <v-img
         class="white--text align-end"
@@ -45,24 +45,15 @@ export default {
 
 <style>
 .page {
- padding-top: 2em; 
+ padding-top: 5em; 
 }
 
 #contactCard{
   margin-bottom: 2em;
 }
 
-h1,
-h2,
-.img {
- 
-  text-align: center;
- 
-}
 
-h1 {
 
-  font-weight: bolder;
-  color: #3c4b65;
-}
+
+
 </style>

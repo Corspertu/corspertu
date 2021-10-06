@@ -2,7 +2,7 @@
    
 <div class="skills">
 
-<h1>Compétences</h1>
+<div class="banner"><h1>Compétences</h1></div>
 
 
 <div class="flexbox">
@@ -221,8 +221,8 @@ export default {
 }
 
 .skills{
- height: 100%;
-  padding-top: 2em;
+
+  padding-top: 5em;
   padding-bottom: 2em;
 }
 </style>

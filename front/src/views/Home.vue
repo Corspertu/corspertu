@@ -3,10 +3,12 @@
      
 
         <div class="content">
-          <h1>
-            Votre expertise Pilotage Budgétaire / Organisation / Web pour tous
-            les acteurs de l'économie sociale et solidaire en Corse et PACA
+          <div class="banner">
+            <h1>
+            Votre expertise Pilotage Budgétaire / Organisation / Web pour l'économie sociale et solidaire en Corse et PACA
           </h1>
+          </div>
+          
           <div class="text">
             L'économie sociale et solidaire est un secteur en perpétuel
             changement. Il doit faire face à des défis toujours plus nombreux.
@@ -106,6 +108,19 @@ export default {
 </script>
 
 <style >
+h1 {
+  
+  font-weight: bolder;
+  color: #3c4b65;
+}
+
+h2,
+.img {
+ 
+  text-align: center;
+ 
+}
+
 
 .text {
   font-size: 1em;
@@ -120,4 +135,21 @@ export default {
   margin-right: auto;
   width: 30%;
 }
+
+.banner{
+  text-align: left;
+  background: linear-gradient(90deg, rgba(101,126,171,67) 0%, rgba(131,164,222,87) 65%, rgba(202,212,227,89) 100%);
+  margin-bottom: 1.5em;
+}
+
+.banner :hover{
+  animation: move;
+  animation-duration: 1s;
+  
+}
+
+@keyframes move {
+  to{background-color: #3C4B65; color:white;}
+}
+
 </style>

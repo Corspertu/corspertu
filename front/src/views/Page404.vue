@@ -1,8 +1,8 @@
 <template>
    <div class="pageLost">
  
+<div class="banner"><h1>Page 404</h1></div>
 
-<h1>Page 404</h1>
 <h2>La page que vous cherchez n'existe pas ou n'a pas encore été créée</h2>
 <h2><router-link
                   style="text-decoration: none; color: dark"
@@ -35,13 +35,10 @@ export default {
     padding-top: 4em;
 }
 
-h1,h2{
+h2{
   text-align: center;
   padding: 5px;
 }
 
-h1{
-  font-weight: bolder;
-  color: #3c4b65;
-}
+
 </style>

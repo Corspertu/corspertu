@@ -1,4 +1,15 @@
+
 <template>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo2.png">
+  <title>Consultant web finance budget freelance en corse et PACA</title>
+</head>
+
 
 <v-app>
    <v-card class="overflow-hidden">
@@ -184,7 +195,7 @@
   </div> 
    <Footer></Footer>
 </v-app>
-
+</html>
 </template>
 
 <script>

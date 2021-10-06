@@ -1,6 +1,6 @@
 <template>
   <div class="servicesPage">
-    <h1>Offre de services</h1>
+   <div class="banner"><h1>Offre de services</h1></div> 
 
     <v-carousel hide-delimiters style="height: 100%">
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
@@ -53,7 +53,7 @@ export default {
 
 <style>
 .servicesPage {
-  padding-top: 3em;
+  padding-top: 5em;
   padding-bottom: 3em;
 }
 </style>
