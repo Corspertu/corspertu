@@ -76,7 +76,7 @@
             par WordPress, je propose une matrice de site web adapté aux mairies
             qui souhaitent garder le contact avec leurs administrés où qu'ils
             soient. Le site dispose en plus des rubriques habituelles un flux
-            d'actualité que même un non programmeur peut animer.
+            d'actualité que même un non-programmeur peut animer.
           </div>
         </v-card-text>
       </v-card>

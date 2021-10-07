@@ -3,7 +3,7 @@
 <div class="whoami">
 <div class="banner"><h1>Qui Suis-je?</h1></div>
 <div class="text">
-Je me présente, Arnaud Bascou, 37 ans. Après une reconvertion professionnelle, j'ai monté ce projet de consultant web/organisation
+Je me présente, Arnaud Bascou, 37 ans. Après une reconversion professionnelle, j'ai monté ce projet de consultant web/organisation
 à destination de l'économie sociale et solidaire. Après 13 ans de vie professionnelle j'étais fier d'avoir acquis une grande expertise 
 dans différents domaines. Cependant, il me manquait des choses importantes: les valeurs, le plaisir du travail accompli, 
 le fait que mon travail fasse bouger les choses. 
@@ -36,7 +36,7 @@ attendues.
       <div class="filledbar"></div>
     </div>
     <div class="circle">
-      Je prends à coeur mes missions et ne laisse pas de problémes sans solutions.
+      Je prends à cœur mes missions et ne laisse pas de problèmes sans solutions.
     </div>
   </div>
   <div class="card">

@@ -1,70 +1,65 @@
 <template>
+  <div class="content">
+    <div class="banner">
+      <h1>
+        Votre expertise Pilotage Budgétaire / Organisation / Web pour l'économie
+        sociale et solidaire en Corse et PACA
+      </h1>
+    </div>
 
-     
+    <div class="text">
+      L'économie sociale et solidaire est un secteur en perpétuel changement. Il
+      doit faire face à des défis toujours plus nombreux. Il doit également se
+      structurer, développer des expertises plus poussées en finance, budget et
+      pilotage. L'ESS est enfin un secteur qui a besoin de communiquer, de
+      promouvoir des informations sur ses actions. Quoi de mieux que les
+      technologies du web pour cela? <br> En tant que consultant je souhaite apporter
+      le soutien que méritent ces acteurs. Puisque l'ESS est unique, mes
+      solutions doivent l'être aussi. L'ESS a besoin de réponses adaptées,
+      personnalisées. Je propose du sur-mesure à des acteurs naturellement
+      complexes.
+    </div>
 
-        <div class="content">
-          <div class="banner">
-            <h1>
-            Votre expertise Pilotage Budgétaire / Organisation / Web pour l'économie sociale et solidaire en Corse et PACA
-          </h1>
-          </div>
-          
-          <div class="text">
-            L'économie sociale et solidaire est un secteur en perpétuel
-            changement. Il doit faire face à des défis toujours plus nombreux.
-            Il doit également se structurer, développer des expertises plus
-            poussées en finance, budget et pilotage. L'ESS est enfin un secteur
-            qui a besoin de communiquer, de répendre des informations sur ses
-            actions. Quoi de mieux que les technologies du web pour cela? En
-            tant que consultant je souhaite apporter le soutien que méritent ces
-            acteurs. Puisque l'ESS est unique, mes solutions doivent l'être
-            aussi. L'ESS a besoin de réponses adaptées, personnalisées. Je
-            propose du sur-mesure à des acteurs naturellement complexes.
-          </div>
+    <div class="logo">
+      <v-img src="../assets/logo2.png"> </v-img>
+    </div>
 
-          <div class="logo">
-            <v-img src="../assets/logo2.png">
-           </v-img>
-           </div >
-
-
-          <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-            <v-timeline-item
-              v-for="(item, i) in items"
-              :key="i"
-              :color="item.color"
-              :picture="item.picture"
-              :icon="item.icon"
-              :title="item.title"
-              :text="item.text"
-              :link="item.link"
-              fill-dot
-              large
-            >
-              <v-card  :color="item.color" dark>
-                <v-img height="75px" :src="item.picture">
-                  <v-card-title class="text-h5">
-                    {{ item.title }}
-                  </v-card-title>
-                </v-img>
-                <v-card-text class="white text--primary">
-                  <p>
-                    {{ item.text }}
-                  </p>
-                  <v-btn :color="item.color" class="mx-0" outlined>
-                    <router-link
-                      style="text-decoration: none; color: dark"
-                      :to="{ name: item.link }"
-                    >
-                      En savoir plus
-                    </router-link>
-                  </v-btn>
-                </v-card-text>
-              </v-card>
-            </v-timeline-item>
-          </v-timeline>
-        </div>
-      
+    <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+      <v-timeline-item
+        v-for="(item, i) in items"
+        :key="i"
+        :color="item.color"
+        :picture="item.picture"
+        :icon="item.icon"
+        :title="item.title"
+        :text="item.text"
+        :link="item.link"
+        fill-dot
+        large
+      >
+        <v-card :color="item.color" dark>
+          <v-img height="75px" :src="item.picture">
+            <v-card-title class="text-h5">
+              {{ item.title }}
+            </v-card-title>
+          </v-img>
+          <v-card-text class="white text--primary">
+            <p>
+              {{ item.text }}
+            </p>
+            <v-btn :color="item.color" class="mx-0" outlined>
+              <router-link
+                style="text-decoration: none; color: dark"
+                :to="{ name: item.link }"
+              >
+                En savoir plus
+              </router-link>
+            </v-btn>
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
+  </div>
 </template>
 
 <script>
@@ -109,18 +104,14 @@ export default {
 
 <style >
 h1 {
-  
   font-weight: bolder;
   color: #3c4b65;
 }
 
 h2,
 .img {
- 
   text-align: center;
- 
 }
-
 
 .text {
   font-size: 1em;
@@ -128,28 +119,32 @@ h2,
   margin-right: 10%;
 }
 
-
-
-.logo{
+.logo {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
 }
 
-.banner{
+.banner {
   text-align: left;
-  background: linear-gradient(90deg, rgba(101,126,171,67) 0%, rgba(131,164,222,87) 65%, rgba(202,212,227,89) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 126, 171, 67) 0%,
+    rgba(131, 164, 222, 87) 65%,
+    rgba(202, 212, 227, 89) 100%
+  );
   margin-bottom: 1.5em;
 }
 
-.banner :hover{
+.banner :hover {
   animation: move;
   animation-duration: 1s;
-  
 }
 
 @keyframes move {
-  to{background-color: #3C4B65; color:white;}
+  to {
+    background-color: #3c4b65;
+    color: white;
+  }
 }
-
 </style>

@@ -5,7 +5,7 @@
     <h2>Droits</h2>
     En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
     confiance dans l’économie numérique, il est précisé aux utilisateurs du site
-    Cors'pertul’identité des différents intervenants dans le cadre de sa
+    Cors'pertu l’identité des différents intervenants dans le cadre de sa
     réalisation et de son suivi : <br />
     Cors'pertu est une association de loi 1901 déclarée à la préfecture de
     Haute-Corse le 20/04/2021. <br />
@@ -68,7 +68,7 @@
     78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l’article L.
     226-13 du Code pénal et la Directive Européenne du 24 octobre 1995. <br>
      A
-    l’occasion de l’utilisation du site Cors'pertu, peuvent êtres
+    l’occasion de l’utilisation du site Cors'pertu, peuvent être
     recueillies : l’URL des liens par l’intermédiaire desquels l’utilisateur a
     accédé au site Cors'pertu, le fournisseur d’accès de l’utilisateur,
     l’adresse de protocole Internet (IP) de l’utilisateur. <br>
