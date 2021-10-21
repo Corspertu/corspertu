@@ -12,8 +12,8 @@
     Le siège est situé Résidence Les Cimes Bat. 4, route inférieure de Cardo,
     20200 Bastia <br />
     Téléphone: 06.20.59.02.94 <br />
-    Le site est hébergé par XXXXX, au capital de XXX, immatriculée au RCS de XXX
-    sous le numéro XXX dont le siège social se trouve XXX <br />
+    Le site est hébergé par Gandi SAS, au capital de 630 000€, immatriculée au RCS de Paris
+    sous le numéro 423 093 459 dont le siège social se trouve 63-65 bd Masséna Paris 75013 <br />
 
     Responsable de publication: Arnaud Bascou
 

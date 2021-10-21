@@ -10,9 +10,9 @@
     <div class="text">
       L'économie sociale et solidaire est un secteur en perpétuel changement. Il
       doit faire face à des défis toujours plus nombreux. Il doit également se
-      structurer, développer des expertises plus poussées en finance, budget et
-      pilotage. L'ESS est enfin un secteur qui a besoin de communiquer, de
-      promouvoir des informations sur ses actions. Quoi de mieux que les
+      <strong>structurer</strong> , développer des expertises plus poussées en <strong>finance, budget et
+      pilotage</strong> . L'ESS est enfin un secteur qui a besoin de <strong>communiquer, de
+      promouvoir</strong>  des informations sur ses actions. Quoi de mieux que les
       technologies du web pour cela? <br> En tant que consultant je souhaite apporter
       le soutien que méritent ces acteurs. Puisque l'ESS est unique, mes
       solutions doivent l'être aussi. L'ESS a besoin de réponses adaptées,
@@ -23,7 +23,7 @@
     <div class="logo">
       <v-img src="../assets/logo2.png"> </v-img>
     </div>
-
+<div class="timelinePrestations">
     <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item
         v-for="(item, i) in items"
@@ -59,6 +59,7 @@
         </v-card>
       </v-timeline-item>
     </v-timeline>
+    </div>
   </div>
 </template>
 
@@ -134,17 +135,14 @@ h2,
     rgba(202, 212, 227, 89) 100%
   );
   margin-bottom: 1.5em;
+  margin-left: 1.7em;
 }
 
-.banner :hover {
-  animation: move;
-  animation-duration: 1s;
+.timelinePrestations{
+  margin-left:20%;
+  margin-right:20%;
 }
 
-@keyframes move {
-  to {
-    background-color: #3c4b65;
-    color: white;
-  }
-}
+
+
 </style>

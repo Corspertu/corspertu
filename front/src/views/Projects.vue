@@ -2,7 +2,7 @@
   <div class="projectsPage">
    <div class="banner"><h1>Projets</h1></div> 
     <div class="flexProject">
-      <v-card id="contactCard" class="mx-auto" max-width="40%">
+        <v-card id="contactCard" class="mx-auto" width="40%">
         <v-img
           class="white--text align-end"
           height="150px"
@@ -12,7 +12,7 @@
             ><div class="titleCard">Lutte contre la fracture numérique</div>
           </v-card-title>
         </v-img>
-
+        
         <v-card-text
           class="text--primary"
           style="font-size: 1em; margin-top: 1em"
@@ -27,8 +27,7 @@
           </div>
         </v-card-text>
       </v-card>
-
-      <v-card id="contactCard" class="mx-auto" max-width="40%">
+      <v-card id="contactCard" class="mx-auto" max-width="40%" min-width="40%">
         <v-img
           class="white--text align-end"
           height="150px"
@@ -53,7 +52,7 @@
           </div>
         </v-card-text>
       </v-card>
-      <v-card id="contactCard" class="mx-auto" max-width="40%">
+      <v-card id="contactCard" class="mx-auto" max-width="40%" min-width="40%">
         <v-img
           class="white--text align-end"
           height="150px"
@@ -80,7 +79,7 @@
           </div>
         </v-card-text>
       </v-card>
-      <v-card id="contactCard" class="mx-auto" max-width="40%">
+      <v-card id="contactCard" class="mx-auto" max-width="40%" min-width="40%">
         <v-img
           class="white--text align-end"
           height="150px"
@@ -106,6 +105,7 @@
           </div>
         </v-card-text>
       </v-card>
+      
     </div>
   </div>
 </template>
@@ -136,6 +136,9 @@ export default {
 
 .flexProject {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap:wrap;
+  
+  
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
    
 <div class="whoami">
-<div class="banner"><h1>Qui Suis-je?</h1></div>
+<div class="banner"><h1>Qui suis-je?</h1></div>
 <div class="text">
 Je me présente, Arnaud Bascou, 37 ans. Après une reconversion professionnelle, j'ai monté ce projet de consultant web/organisation
 à destination de l'économie sociale et solidaire. Après 13 ans de vie professionnelle j'étais fier d'avoir acquis une grande expertise 
@@ -104,7 +104,7 @@ export default {
   width: 200px;
   background-color: #3C4B65;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
+  box-shadow: 0rem 0 1rem rgb(100, 121, 160);
 /*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
@@ -154,8 +154,8 @@ export default {
   z-index: 3;
   width: 0px;
   height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  background: rgb(60,75,101,40);
+  background: linear-gradient(90deg, rgba(60,75,101,40) 0%, rgba(101,126,171,67) 65%, rgba(131,164,222,87) 100%);
   transition: 0.6s ease-out;
 }
 

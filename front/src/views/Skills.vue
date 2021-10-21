@@ -135,6 +135,12 @@ export default {
         text: '',
       },
       {
+        color: '#000',
+        src: require('../assets/notion.png'),
+        title: 'Notion',
+        text: 'Développeur de solutions business, CRM, management de projets',
+      },
+      {
         color: '#B52F37',
         src: require('../assets/palatine.jpg'),
         title: 'Banque Palatine',
@@ -184,6 +190,12 @@ export default {
         src: require('../assets/vuejs.png'),
         title: 'Spécialisation Vue.JS',
         text: 'Vue.JS, Vue router et Vuetify',
+      },
+      {
+        color: '#0000F7',
+        src: require('../assets/bubble.png'),
+        title: 'Bubble',
+        text: 'Création d\'applications mobiles rapides et fiables',
       },
       {
         color: '#264152',

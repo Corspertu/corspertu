@@ -1,18 +1,22 @@
 
 <template>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logo2.png">
-  <title>Consultant web finance budget freelance en corse et PACA</title>
-</head>
+  <!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../assets/logo2.png"
+      />
+      <title>Consultant web finance budget freelance en corse et PACA</title>
+    </head>
 
-
-<v-app>
-   <v-card class="overflow-hidden">
+    <v-app>
+      <v-card class="overflow-hidden">
         <v-row class="mt-6 mb-6 hidden-md-and-down">
           <v-app-bar
             fixed
@@ -35,7 +39,7 @@
                   style="text-decoration: none; color: white"
                   :to="{ name: 'home' }"
                 >
-                  Cor'Spertu
+                  <div class="logoto">Cor'Spertu</div>
                 </router-link>
               </h2>
             </v-app-bar-title>
@@ -46,10 +50,7 @@
               <v-tabs align-with-title>
                 <v-tab>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'home' }"
                   >
                     Accueil
@@ -57,10 +58,7 @@
                 >
                 <v-tab
                   ><router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'services' }"
                   >
                     Offre de services
@@ -68,10 +66,7 @@
                 >
                 <v-tab>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'skills' }"
                   >
                     Compétences
@@ -79,20 +74,14 @@
                 </v-tab>
                 <v-tab>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'whoami' }"
                     >Qui suis-je
                   </router-link>
                 </v-tab>
                 <v-tab>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'projects' }"
                     >Projets
                   </router-link>
@@ -109,21 +98,27 @@
           <v-toolbar-title style="font-weight: bolder; font-size: 1.2em">
             Cors'pertu
           </v-toolbar-title>
+          <v-btn text>
+            <v-icon> mdi-phone-outgoing-outline</v-icon>
+            <a
+              href="tel:0033620590294"
+              target="_blank"
+              style="text-decoration: none; color: white"
+            ></a>
+          </v-btn>
           <v-spacer></v-spacer>
+
           <v-menu bottom left>
             <template v-slot:activator="{ on, attrs }">
               <v-btn dark icon v-bind="attrs" v-on="on">
-                <v-icon color="purple" large> mdi-menu</v-icon>
+                <v-icon color="white" large> mdi-menu</v-icon>
               </v-btn>
             </template>
             <v-list style="background-color: rgba(101, 126, 171, 0.7)">
               <v-list-item>
                 <v-list-item-title>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'home' }"
                   >
                     Accueil
@@ -133,10 +128,7 @@
               <v-list-item>
                 <v-list-item-title>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'services' }"
                   >
                     Offre de services
@@ -146,10 +138,7 @@
               <v-list-item>
                 <v-list-item-title>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'skills' }"
                   >
                     Compétences
@@ -159,10 +148,7 @@
               <v-list-item>
                 <v-list-item-title>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'whoami' }"
                   >
                     Qui suis-je?
@@ -172,10 +158,7 @@
               <v-list-item>
                 <v-list-item-title>
                   <router-link
-                    style="
-                      text-decoration: none;
-                      color: white;
-                    "
+                    style="text-decoration: none; color: white"
                     :to="{ name: 'projects' }"
                   >
                     Projets
@@ -186,27 +169,22 @@
           </v-menu>
         </v-toolbar>
         <!-- end of the navbar //-->
-
-        
       </v-card>
-  <div class="content">
-    <router-view :key="$route.fullPath"/>
-  
-  </div> 
-   <Footer></Footer>
-</v-app>
-</html>
+      <div class="content">
+        <router-view :key="$route.fullPath" />
+      </div>
+      <Footer></Footer>
+    </v-app>
+  </html>
 </template>
 
 <script>
-
-import Footer from './components/Footer.vue';
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-   
     Footer,
   },
 
@@ -216,8 +194,12 @@ export default {
 };
 </script>
 <style>
-.content{
-   padding-top: 7em;
+.content {
+  padding-top: 7em;
   background-color: #cad4e3;
+}
+
+.logoto:hover {
+  color: #3c4d65;
 }
 </style>
