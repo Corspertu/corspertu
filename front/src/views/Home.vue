@@ -39,7 +39,7 @@
       >
         <v-card :color="item.color" dark>
           <v-img height="75px" :src="item.picture">
-            <v-card-title class="text-h5">
+            <v-card-title class="text-h5" style="word-break: break-word">
               {{ item.title }}
             </v-card-title>
           </v-img>
@@ -139,10 +139,12 @@ h2,
 }
 
 .timelinePrestations{
-  margin-left:20%;
-  margin-right:20%;
+  margin-left:10%;
+  margin-right:10%;
 }
 
-
+.content{
+  word-break: normal;
+}
 
 </style>
