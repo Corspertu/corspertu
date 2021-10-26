@@ -1,67 +1,27 @@
 <template>
   <section class="projectsPage">
    <div class="banner"><h1>Projets</h1></div> 
-    <div class="flexProject">
-    <v-col xs="12" sm="12" md="12" lg="6" xl="6">
-      <div v-for="(item, i) in items"
-        :key="i">
-      
-      <v-card id="contactCard" class="mx-auto" >
-        <v-img
-          class="white--text align-end"
-          height="150px"
-          :src="item.picture"
-        >
-          <v-card-title
-            ><div class="titleCard">
-              {{item.title}}
-            </div>
-          </v-card-title>
-        </v-img>
 
-        <v-card-text
-          class="text--primary"
-          style="font-size: 1em; margin-top: 1em"
-        >
-          <div>
-            {{item.text}}
-          </div>
-        </v-card-text>
-      </v-card>
-      </div>
-      </v-col>
     
-  </div>
+  <div><ProjectThumbnail/></div>
+  
+  
+     
+      
+  
   </section>
 </template>
 
 <script>
+
+import ProjectThumbnail from "../components/ProjectThumbnail.vue"
+
 export default {
-  setup() {},
-  data: () => ({
-    items: [
-      {
-        title: "Lutte contre la fracture numérique",
-        picture: require("../assets/raspberry.jpg"),
-        text:"L'objectif est d'équiper des familles coupées du numérique qui ne peuvent accéder à leurs droits. En utilisant la technologie Raspberry, il est possible de fournir un ordinateur fonctionnel pour 120€ comprenant ordinateur, OS, clavier et branchement sur la télévision. A cela il est possible d'ajouter une formation destinée à des utilisateurs débutants. Le projet est en phase de prototypage.",
-      },
-      {
-        title: "Comptabilité/Budget pour associations",
-        picture: require("../assets/budget.jpg"),
-        text: "Outil complet de comptabilité pour associations: pointage des comptes, contrôles de caisses et de soldes, comptabilité par engagement, présentation des résultats en compte de résultat, par engagements, format collectivité, suivi de projets, outil de facturation, notes de frais. Le projet est en phase de déploiement par lot.",
-      },
-      {
-        title: "Des sites abordables et adaptés aux petites mairies",
-        picture: require("../assets/villageCorse.jpg"),
-        text:"L'objectif est de réaliser le site le moins cher possible tout en restant personnalisé et original. A l'aide de la technologie offerte par WordPress, je propose une matrice de site web adapté aux mairies qui souhaitent garder le contact avec leurs administrés où qu'ils soient. Le site dispose en plus des rubriques habituelles un flux d'actualité que même un non-programmeur peut animer.",
-      },
-      {
-        title: "Des outils de planification et d'organisation pour tous",
-        picture: require("../assets/placebusiness.jpg"),
-        text: "Le web propose aujourd'hui des outils de planification et de travail en équipe qui étaient autrefois réservés aux grandes entreprises. La plupart de ces solutions sont gratuites. Vous pouvez améliorer le suivi de vos projets, listes des taches, planification du travail des équipes, gestion clients et partenaires... La solution à vos besoins existe.",
-      }
-    ],
-  }),
+  components: {
+      ProjectThumbnail,
+    },
+  
+  
 };
 
 </script>
@@ -70,20 +30,6 @@ export default {
 .projectsPage {
   padding-top: 5em;
   padding-bottom: 3em;
-}
-#contactCard {
-  margin-bottom: 2em;
-  
-  margin:1em;
-
-}
-
-
-.rows{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-
   
 }
 
@@ -91,15 +37,9 @@ export default {
 .titleCard {
   font-weight: bolder;
   font-size: 1.3em;
+  
 }
 
-.flexProject {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  
-  
-  
-  
-}
+
+
 </style>

@@ -49,7 +49,7 @@ export default {
 }
 
 #contactCard{
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 
