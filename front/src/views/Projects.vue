@@ -1,5 +1,5 @@
 <template>
-  <section class="projectsPage">
+  <section class="content">
    <div class="banner"><h1>Projets</h1></div> 
 
     
@@ -8,8 +8,10 @@
   
      
       
-  
+   <div class="spacerBottom"></div>
   </section>
+ 
+
 </template>
 
 <script>
@@ -27,11 +29,7 @@ export default {
 </script>
 
 <style>
-.projectsPage {
-  padding-top: 5em;
-  padding-bottom: 3em;
-  
-}
+
 
 
 .titleCard {

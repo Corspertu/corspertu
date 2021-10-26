@@ -1,5 +1,5 @@
 <template>
-  <div class="legal">
+  <div class="content">
     <div class="banner"><h1>Mentions légales</h1></div>
 
     <h2>Droits</h2>
@@ -135,7 +135,7 @@ export default {
 
 <style>
 .legal {
-  padding-top: 5em;
+  
   margin-left: 20%;
   margin-right: 20%;
 }

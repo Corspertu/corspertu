@@ -1,8 +1,8 @@
 <template>
-  <div class="servicesPage">
+  <div class="content">
    <div class="banner"><h1>Offre de services</h1></div> 
 
-    <v-carousel hide-delimiters style="height: 100%">
+    <v-carousel hide-delimiters style="height: 100%" class="caroussel">
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
         <v-jumbotron dark>
           <v-container fill-height>
@@ -52,8 +52,9 @@ export default {
 </script>
 
 <style>
-.servicesPage {
-  padding-top: 5em;
+.caroussel {
+  
   padding-bottom: 3em;
+  
 }
 </style>

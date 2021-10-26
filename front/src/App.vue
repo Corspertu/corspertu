@@ -200,6 +200,11 @@ export default {
   padding-top: 7em;
   background-color: #cad4e3;
 }
+@media (max-width: 1264px) {
+  .content{
+    padding-top: 1em;
+  }
+}
 
 .logoto:hover {
   color: #3c4d65;

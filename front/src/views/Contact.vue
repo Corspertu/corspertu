@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="content">
     <div class="banner"><h1>Contact</h1></div>
     <v-card id="contactCard" class="mx-auto" max-width="800">
       <v-img
@@ -44,9 +44,9 @@ export default {
 </script>
 
 <style>
-.page {
- padding-top: 5em; 
-}
+
+
+  
 
 #contactCard{
   margin-bottom: 1em;

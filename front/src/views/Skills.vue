@@ -1,14 +1,15 @@
 <template>
    
-<div class="skills">
+<div class="content">
 
 <div class="banner"><h1>Compétences</h1></div>
 
 
 <div class="flexbox">
-<v-card
+  <v-card
       max-width=40%
       class="mx-auto"
+      
     >
       
   
@@ -58,9 +59,10 @@
       </v-container>
     </v-card>
 
-<v-card
+  <v-card
       max-width=40%
       class="mx-auto"
+      
     >
       
   
@@ -230,11 +232,10 @@ export default {
 .flexbox{
   
   display: flex;
-}
-
-.skills{
-
-  padding-top: 5em;
+  flex-wrap: wrap;
+  flex-direction: row;
   padding-bottom: 2em;
 }
+
+
 </style>

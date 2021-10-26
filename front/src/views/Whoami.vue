@@ -1,6 +1,6 @@
 <template>
    
-<div class="whoami">
+<div class="content">
 <div class="banner"><h1>Qui suis-je?</h1></div>
 <div class="text">
 Je me présente, Arnaud Bascou, 37 ans. Après une reconversion professionnelle, j'ai monté ce projet de consultant web/organisation
@@ -60,7 +60,7 @@ attendues.
     </div>
   </div>
 </div>
-  
+  <div class="spacerBottom"></div>
    
 </div>   
     
@@ -75,11 +75,7 @@ export default {
 </script>
 
 <style lang="scss">
-.whoami{
-  height: 1000px;
-  padding-top: 5em;
-  padding-bottom: 2em;
-}
+
 
 .text {
   font-size: 1em;
@@ -87,8 +83,13 @@ export default {
   margin-right: 10%;
 }
 
+.spacerBottom{
+ padding-bottom: 2em; 
+}
+
 .containerWho {
   padding-top: 2em;
+  
   margin: 0 auto;
   position: static;
   height: 300px;
