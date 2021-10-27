@@ -1,11 +1,11 @@
 <template>
  
-  
-  <div  style=" display:flex; flex-direction:row; flex-wrap:wrap; justify-content: space-between">
-    <v-row  v-for="(item, i) in items"
-        :key="i" >
-      
-      <v-card  id="contactCard" class="mx-auto" max-width="800" style="margin:1em">
+   <v-container>
+     <v-layout row wrap>
+       <v-flex xs12 sm12 md6 lg6 v-for="(item, i) in items"
+        :key="i">
+ 
+      <v-card  class="cardMargin" style="margin:1em">
          <v-img
           class="white--text "
           height="150px"
@@ -28,11 +28,19 @@
           </div>
         </v-card-text>
      </v-card>
-     
-      </v-row> 
-      </div>
+    
+       </v-flex>
  
+     </v-layout>
+   </v-container>
+ 
+   
+      
+
+
 </template>
+
+
 <script>
 export default {
   setup() {},
@@ -64,3 +72,14 @@ export default {
 
 </script>
 
+<style>
+
+.cardMargin{
+  margin: 2em;
+}
+
+
+
+
+
+</style>

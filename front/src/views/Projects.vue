@@ -32,11 +32,7 @@ export default {
 
 
 
-.titleCard {
-  font-weight: bolder;
-  font-size: 1.3em;
-  
-}
+
 
 
 

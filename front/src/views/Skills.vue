@@ -4,23 +4,19 @@
 
 <div class="banner"><h1>Compétences</h1></div>
 
+<v-container>
+  <v-layout row wrap>
 
-<div class="flexbox">
-  <v-card
-      max-width=40%
-      class="mx-auto"
+    <v-flex xs12 sm12 md6 lg6 >
+      <v-card class="skillCol">
+          <v-app-bar
+            dark
+            color= #657EAB
+          >
       
-    >
-      
-  
-      <v-app-bar
-        dark
-        color= #657EAB
-      >
-  
-        <v-toolbar-title>Budget Finance Organisation</v-toolbar-title>
+            <v-toolbar-title>Budget Finance Organisation</v-toolbar-title>
 
-      </v-app-bar>
+          </v-app-bar>
   
       <v-container>
         <v-row dense>
@@ -58,14 +54,10 @@
         </v-row>
       </v-container>
     </v-card>
+    </v-flex>
 
-  <v-card
-      max-width=40%
-      class="mx-auto"
-      
-    >
-      
-  
+  <v-flex xs12 sm12 md6 lg6 >
+    <v-card class="skillCol">
       <v-app-bar
         dark
         color= #657EAB
@@ -111,9 +103,16 @@
         </v-row>
       </v-container>
     </v-card>
+    </v-flex>
+
+  </v-layout>
+
+</v-container>
+
+  
 
 </div>
-  </div> 
+  
     
 </template>
 
@@ -229,12 +228,9 @@ export default {
 </script>
 
 <style>
-.flexbox{
-  
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-bottom: 2em;
+
+.skillCol{
+  margin: 2em;
 }
 
 
