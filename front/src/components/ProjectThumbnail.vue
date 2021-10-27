@@ -12,7 +12,7 @@
           
           :src="item.picture"
         >
-          <v-card-title>
+          <v-card-title style="word-break: break-word">
             <div class="titleCard">
               {{item.title}}
             </div>

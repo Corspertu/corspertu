@@ -23,6 +23,7 @@
     <div class="logo">
       <v-img src="../assets/logo2.png"> </v-img>
     </div>
+
 <div class="timelinePrestations">
     <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item
@@ -40,7 +41,7 @@
         <v-card :color="item.color" dark>
           <v-img height="75px" :src="item.picture">
             <v-card-title class="text-h5" style="word-break: break-word">
-              {{ item.title }}
+              <div class="titleResponsive">{{ item.title }}</div> 
             </v-card-title>
           </v-img>
           <v-card-text class="white text--primary">

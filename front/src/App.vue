@@ -104,7 +104,6 @@
             <v-icon> mdi-phone-outgoing-outline</v-icon>
             <a
               href="tel:+33620590294)"
-              target="_blank"
               style="text-decoration: none; color: white"
             ></a>
           </v-btn>
@@ -203,6 +202,13 @@ export default {
 @media (max-width: 1264px) {
   .content{
     padding-top: 1em;
+  }
+  h1{
+    font-size: 1.3em;
+  }
+  .titleResponsive{
+     font-size: 0.6em;
+     font-weight: bold;
   }
 }
 

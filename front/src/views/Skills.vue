@@ -35,6 +35,7 @@
                   <v-card-title
                     class="text-h5"
                     v-text="item.title"
+                    style="word-break: break-word"
                   ></v-card-title>
   
                   <v-card-subtitle v-text="item.text"></v-card-subtitle>
@@ -84,6 +85,7 @@
                   <v-card-title
                     class="text-h5"
                     v-text="item.title"
+                    style="word-break: break-word"
                   ></v-card-title>
   
                   <v-card-subtitle v-text="item.text"></v-card-subtitle>
