@@ -106,15 +106,14 @@
                 </router-link>
            
           </v-toolbar-title>
-          <v-btn text>
-            <v-icon> mdi-phone-outgoing-outline</v-icon>
-            <a
-              href="tel:+33620590294"
-              style="text-decoration: none; color: white"
-            ></a>
-          </v-btn>
+         
+          
+            
           <v-spacer></v-spacer>
-
+<v-btn href="tel:+33620590294">
+             <v-icon> mdi-phone-outgoing-outline</v-icon>
+                
+        </v-btn>
           <v-menu bottom left>
             <template v-slot:activator="{ on, attrs }">
               <v-btn dark icon v-bind="attrs" v-on="on">
