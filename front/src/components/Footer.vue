@@ -5,9 +5,9 @@
       color="#3c4b65"
       dark
     >
-      <v-toolbar-title> 
+      <v-toolbar-title class="hidden-sm-and-down"> 
           <router-link
-                  style="text-decoration: none; color: white"
+                  style=" text-decoration: none; color: white"
                   :to="{ name: 'home' }"
                 >
                   Accueil

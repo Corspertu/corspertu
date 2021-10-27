@@ -43,7 +43,8 @@
                 </div>
   
                 <v-avatar
-                  class="ma-3"
+                  contain
+                  class="d-none d-md-block ma-3 "
                   size="125"
                   tile
                 >
@@ -93,7 +94,8 @@
                 </div>
   
                 <v-avatar
-                  class="ma-3"
+                  contain
+                  class="d-none d-md-block ma-3 "
                   size="125"
                   tile
                 >

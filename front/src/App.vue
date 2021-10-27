@@ -98,12 +98,18 @@
           style="background-color: rgba(60, 75, 101, 0.7)"
         >
           <v-toolbar-title style="font-weight: bolder; font-size: 1.2em">
-            Cors'pertu
+            <router-link
+                  style="text-decoration: none; color: white"
+                  :to="{ name: 'home' }"
+                >
+                  <div class="logoto">Cor'Spertu</div>
+                </router-link>
+           
           </v-toolbar-title>
           <v-btn text>
             <v-icon> mdi-phone-outgoing-outline</v-icon>
             <a
-              href="tel:+33620590294)"
+              href="tel:+33620590294"
               style="text-decoration: none; color: white"
             ></a>
           </v-btn>
@@ -207,8 +213,9 @@ export default {
     font-size: 1.3em;
   }
   .titleResponsive{
-     font-size: 0.6em;
+     font-size: 0.5em;
      font-weight: bold;
+     line-height: normal;
   }
 }
 
