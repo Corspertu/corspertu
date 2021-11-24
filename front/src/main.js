@@ -41,7 +41,7 @@ const router = new VueRouter({
 
     {
       name: 'page404', // name of the route
-      path: '/page404', // matching url
+      path: '*', // matching url
       component: Page404 // show this component when the route is checked
     },
 
@@ -61,6 +61,11 @@ const router = new VueRouter({
       path: '/projects', // matching url
       component: Projects // show this component when the route is checked
     },
+    {
+      name: 'blog', // name of the route
+      path: '/blog', // matching url
+      component: Blog // show this component when the route is checked
+    },
     
   ]
 
@@ -76,6 +81,7 @@ import Page404 from './views/Page404.vue';
 import Contact from './views/Contact.vue';
 import Legal from './views/Legal.vue';
 import Projects from './views/Projects.vue';
+import Blog from './views/Blog.vue';
 
 Vue.config.productionTip = false
 
