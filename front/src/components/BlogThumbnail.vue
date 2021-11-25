@@ -1,9 +1,8 @@
 <template>
  
-   <v-container>
-     <v-layout row wrap>
-       <v-flex xs12 sm12 md6 lg6 >
-
+  
+    
+<v-col xs="12" sm="6" md="6" lg="6" xl="6">
   <v-card  class="cardMargin" style="margin:1em" v-if="posts">
          <v-img
           class="indigo accent--text "
@@ -38,13 +37,22 @@
              {{posts.excerpt.rendered}}
           </div>
         </v-card-text>
+        <v-btn 
+                class="ma-2"
+                outlined
+                right
+                color=#657eab
+                v-bind:href="posts.link"
+                target="_blank"
+                >
+          Aller lire l'article
+
+        </v-btn>
      </v-card>
 
+  </v-col>  
     
-       </v-flex>
- 
-     </v-layout>
-   </v-container>
+   
  
 
 </template>

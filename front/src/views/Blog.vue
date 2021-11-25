@@ -1,6 +1,8 @@
 <template>
   <section class="content">
    <div class="banner"><h1>Les dernières actualités</h1></div> 
+<v-container>
+
 
     
   <v-row><BlogThumbnail
@@ -10,13 +12,15 @@
   
   /></v-row>
   
-  
-     
-      
-   <div class="spacerBottom"></div>
-  </section>
  
+     
+</v-container>      
+   <div class="spacerBottom"></div>
+  
 
+
+ 
+</section>
 </template>
 
 <script>
