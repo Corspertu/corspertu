@@ -12,7 +12,7 @@
         >
           <v-card-title style="word-break: break-word">
             <div class="titleCard">
-              {{posts.title.rendered}}
+              {{decoder(posts.title.rendered)}}
             </div>
           </v-card-title>
         </v-img>
@@ -24,7 +24,7 @@
         >
           <v-card-title style="word-break: break-word">
             <div class="titleCard">
-              {{posts.title.rendered}}
+              {{decoder(posts.title.rendered)}}
             </div>
           </v-card-title>
         </v-img>
@@ -33,9 +33,9 @@
           class="text--primary"
           style="font-size: 1em; margin-top: 1em;"
         >
-          <div>
-             {{posts.excerpt.rendered}}
-          </div>
+          <v-html>
+             {{decoder(posts.excerpt.rendered)}}
+          </v-html>
         </v-card-text>
         <v-btn 
                 class="ma-2"
@@ -60,15 +60,32 @@
 
 <script>
 export default {
-  setup() {},
+  
   props:{
-    posts:{
+    
+    posts: {
       type: Object,
+  },
+  },
+  
+  methods: {
+   // DOMParser technically still working draft, but quite well supported. https://developer.mozilla.org/en-US/docs/Web/API/DOMParser
+     domDecoder (str) {
+     let parser = new DOMParser();
+      let dom = parser.parseFromString('<!doctype html><body>' + str, 'text/html');
+      return dom.body.textContent;
+    },
+    
+    decoder (str) {
+     var textArea = document.createElement('textarea');
+      textArea.innerHTML = str;
+      return textArea.value;
     }
   },
   
-  
 };
+
+
 
 </script>
 

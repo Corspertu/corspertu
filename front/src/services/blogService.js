@@ -9,6 +9,7 @@ const blogService = {
   },
 
   
+  
   handleGetPostsResponse: function (response) {
     return response.data;
   },
