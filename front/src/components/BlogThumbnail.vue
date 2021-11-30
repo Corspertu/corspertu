@@ -69,17 +69,15 @@ export default {
   },
   
   methods: {
-   // DOMParser technically still working draft, but quite well supported. https://developer.mozilla.org/en-US/docs/Web/API/DOMParser
-     domDecoder (str) {
-     let parser = new DOMParser();
-      let dom = parser.parseFromString('<!doctype html><body>' + str, 'text/html');
-      return dom.body.textContent;
-    },
+   
     
     decoder (str) {
      var textArea = document.createElement('textarea');
       textArea.innerHTML = str;
-      return textArea.value;
+      
+      return textArea.value.replace(/<\/?p[^>]*>/g, "");
+
+     
     }
   },
   
