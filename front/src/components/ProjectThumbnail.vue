@@ -12,17 +12,18 @@
           
           :src="item.picture"
         >
-          <v-card-title style="word-break: break-word">
-            <div class="titleCard">
-              {{item.title}}
-            </div>
-          </v-card-title>
+          
         </v-img>
 
         <v-card-text
           class="text--primary"
-          style="font-size: 1em; margin-top: 1em;"
+          style="font-size: 1em;"
         >
+        <v-card-title style="word-break: break-word">
+            <div class="titleCard">
+              {{item.title}}
+            </div>
+          </v-card-title>
           <div>
             {{item.text}}
           </div>
