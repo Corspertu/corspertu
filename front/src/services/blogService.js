@@ -4,7 +4,7 @@ import axios from 'axios';
 const blogService = {
 
   getPosts: function () {
-    return axios.get('http://www.weborga.co/wp-json/wp/v2/posts?per_page=100&_embed')
+    return axios.get('https://www.weborga.co/wp-json/wp/v2/posts?per_page=100&_embed')
       .then(blogService.handleGetPostsResponse);
   },
 

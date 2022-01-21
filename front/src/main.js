@@ -66,6 +66,12 @@ const router = new VueRouter({
       path: '/blog', // matching url
       component: Blog // show this component when the route is checked
     },
+    {
+      name: 'weborga', // name of the route
+      path: '/weborga', // matching url
+      beforeEnter() {location.href = "http://www.weborga.co"; }
+    },
+
     
   ]
 
@@ -82,6 +88,7 @@ import Contact from './views/Contact.vue';
 import Legal from './views/Legal.vue';
 import Projects from './views/Projects.vue';
 import Blog from './views/Blog.vue';
+
 
 Vue.config.productionTip = false
 

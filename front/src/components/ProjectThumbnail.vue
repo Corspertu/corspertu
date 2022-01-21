@@ -53,9 +53,9 @@ export default {
         text:"L'objectif est d'équiper des familles coupées du numérique qui ne peuvent accéder à leurs droits. En utilisant la technologie Raspberry, il est possible de fournir un ordinateur fonctionnel pour 120€ comprenant ordinateur, OS, clavier et branchement sur la télévision. A cela il est possible d'ajouter une formation destinée à des utilisateurs débutants. Le projet est en phase de prototypage.",
       },
       {
-        title: "Comptabilité/Budget pour associations",
+        title: "Organisation administrative et comptable pour associations",
         picture: require("../assets/budget.jpg"),
-        text: "Outil complet de comptabilité pour associations: pointage des comptes, contrôles de caisses et de soldes, comptabilité par engagement, présentation des résultats en compte de résultat, par engagements, présentation des comptes au format demandé par les collectivités, suivi de projets, outil de facturation, notes de frais. Le projet est en phase de déploiement par lot.",
+        text: "Outil complet de gestion pour associations: une page internet personnalisée d'accueil, un drive pour les données sensibles, un outil comptable complet.",
       },
       {
         title: "Des sites abordables et adaptés aux petites mairies",
